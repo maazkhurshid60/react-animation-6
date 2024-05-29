@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-animation-6/static/css/main.e4fde6ee.css",
+    "main.js": "/react-animation-6/static/js/main.15c3d6b1.js",
+    "static/media/dive-in-button.svg": "/react-animation-6/static/media/dive-in-button.380d0890ef5f2802b62160acf3deb894.svg",
+    "static/media/machine.svg": "/react-animation-6/static/media/machine.9995c480ee40657f8948e995b30048fb.svg",
+    "static/media/chestbox-img.png": "/react-animation-6/static/media/chestbox-img.7786266901e6c90566f6.png",
+    "static/media/background.svg": "/react-animation-6/static/media/background.74a6fdb1112a5a2fc298.svg",
+    "static/media/logo.png": "/react-animation-6/static/media/logo.b7635583ba71b9ebd695.png",
+    "static/media/edge-bottom.svg": "/react-animation-6/static/media/edge-bottom.6c4ae2b000fc09e1311a59840c70bf5c.svg",
+    "static/media/edge-right.svg": "/react-animation-6/static/media/edge-right.217be1df43c4c42a8093dad7cb7d8871.svg",
+    "static/media/edge-left.svg": "/react-animation-6/static/media/edge-left.ebb8bd71933a4fe28e4d58bb3df0a5da.svg",
+    "static/media/edge-top.svg": "/react-animation-6/static/media/edge-top.0e46dea8e12c261c75a55450367c1ffa.svg",
+    "static/media/CTA-btn.svg": "/react-animation-6/static/media/CTA-btn.4d6624d8b0f58a6911e5ea6622892e2b.svg",
+    "static/media/btn-base.svg": "/react-animation-6/static/media/btn-base.753b687d76e9ffe0cf40dfb2d0e4014a.svg",
+    "index.html": "/react-animation-6/index.html",
+    "main.e4fde6ee.css.map": "/react-animation-6/static/css/main.e4fde6ee.css.map",
+    "main.15c3d6b1.js.map": "/react-animation-6/static/js/main.15c3d6b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4fde6ee.css",
+    "static/js/main.15c3d6b1.js"
+  ]
+}
