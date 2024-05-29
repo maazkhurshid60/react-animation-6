@@ -1,0 +1,463 @@
+
+body {
+    overflow: hidden;
+}
+
+.demo-page {
+    .screen-1 {
+        background: linear-gradient(to bottom, rgb(86, 41, 234) 4.27%, #F433FF 136.7%);
+        // background: black;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .machine {
+            position: absolute;
+            // top: 10%;
+            // scale: 1.8;
+            // transform: translateY(-300px);
+            height: 100vh;
+            transition: all 250ms linear;
+        }
+    
+        .btn-parent-div {
+            border: none;   
+            position: absolute;
+            bottom: 8%;
+            left: 43%;
+            width: 220px;
+        }
+    
+        .clip-div {
+            border: none;
+            position: absolute; 
+            width: 220px;
+            height: 50px;
+            clip-path: inset(-100% 0% 40% 0%);
+        }
+    
+        .dive-in-btn, .btn {
+            border: none;
+            width: 200px;
+            position: absolute;
+            top: -7px;
+            left: 5px;
+        }
+
+        .dive-in-btn {
+            animation: diveInBtnAnimation 750ms linear infinite;
+        }
+    
+        .btn-base {
+            width: inherit;
+        }
+    
+        .dive-in-btn:hover {
+            cursor: pointer;
+            animation: none;
+        }
+    
+        button:active {
+            position: absolute;
+            border: none;
+            background-color: none;
+            transform: translateY(8px);
+    
+        }
+    
+        @keyframes diveInBtnAnimation {
+           0% {
+            transform: translateY(0px);
+           }
+           50% {
+            transform: translateY(8px);
+           }
+           100% {
+            transform: translateY(0px);
+           }
+        }
+    
+    }
+    
+    .screen-2 {
+        
+        .first-layer {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+    
+            .left-edge {
+                position: fixed;
+                top: -2.5rem;
+                left: -10rem;
+                z-index: 2;
+            }
+    
+            .right-edge {
+                position: fixed;
+                top: -2.5rem;
+                right: -10rem;
+                z-index: 2;
+            }
+    
+        }
+    
+        .second-layer {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .top-edge {
+                position: fixed;
+                top: -1rem;
+                width: inherit;
+                padding: 0 1.2rem;
+                z-index: 3;
+            }
+    
+            .bottom-edge {
+                position: fixed;
+                bottom: -1.5rem;
+                width: inherit;
+                z-index: 3;
+            }
+        }
+    
+        .third-layer {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+
+            .background {
+                position: fixed;
+                top: 8%;
+                left: 7%;
+                height: 80%;
+                width: 86%;
+                padding: 10px;
+                // background: linear-gradient(0deg, #29134E 0%, #1F0B3F 55%, #1B0838 100%);
+                background-image: url('../../assets/background.svg');
+                background-repeat: repeat;
+                background-position:center 80%;
+                object-fit:contain;
+                z-index: -1;
+
+                .progress-bar {
+                    position: fixed;
+                    top: 10%;
+                    left: 40%;
+                    height: 4.2rem;
+                }
+
+                .content-title {
+                    position: fixed;
+                    top: 22%;
+                    left: 35%;
+                    height: 5rem;
+                }
+
+                .content-text {
+                    position: fixed;
+                    top: 38%;
+                    left: 37.5%;
+                    height: 2rem;
+                }
+
+                .prize-arcade-logo {
+                    position: fixed;
+                    top: 45%;
+                    left: 44%;
+                    height: 5rem;
+                }
+
+                .cta-btn {
+                    position: fixed;
+                    top: 60%;
+                    left: 43%;
+                    height: 3rem;
+                }
+
+                .cta-btn:hover {
+                    cursor: pointer;
+                    animation: scaleUpDown 750ms linear infinite;
+                }
+
+                .sprinkles {
+                    height: 3.2rem;
+                }
+
+                .cloud-1 {
+                    position: fixed;
+                    top: 35%;
+                    left: 25%;
+                    height: 3rem;
+                }
+
+                .cloud-2 {
+                    position: fixed;
+                    top: 8%;
+                    right: 15%;
+                    height: 3.5rem;
+                }
+
+                .cloud-3 {
+                    position: fixed;
+                    top: 15%;
+                    left: 10%;
+                    height: 5rem;
+                }
+
+                #sprinkle-1 {
+                    position: fixed;
+                    top: 60%;
+                    right: 39.5%;
+                }
+
+                #sprinkle-2 {
+                    position: fixed;
+                    top: 66%;
+                    left: 38%;
+                }
+
+
+                .dinosaur {
+                    position: fixed;
+                    bottom: 19%;
+                    left: 45%;
+                    height: 5rem;
+                    display: none;
+                }
+
+                @keyframes scaleUpDown {
+                    0% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.2);
+                    }
+                    100%{
+                        transform: scale(1);
+                    }
+                }
+
+            }
+        }
+        
+    }
+
+    .screen-3 {
+        height: 100vh;
+        width: 100%;
+
+        .edges-layer {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            
+            .left-edge {
+                position: absolute;
+                top: -2.5rem;
+                left: -9.5rem;
+                z-index: 0;
+            }
+
+            .right-edge {
+                position: absolute;
+                top: -2.5rem;
+                right: -9.5rem;
+                z-index: 0;
+            }
+
+            .top-edge {
+                position: absolute;
+                top: -1rem;
+                width: inherit;
+                padding: 0 1.8rem;
+                z-index: 1;
+            }
+
+            .bottom-edge {
+                position: absolute;
+                bottom: -1.5rem;
+                width: inherit;
+                z-index: 1;
+            }
+
+        }
+
+        .center-layer {
+            position: absolute;
+            top: 8%;
+            left: 7.5%;
+            height: 80%;
+            width: 85%;
+            background-image: url('../../assets/screen-3-bg.png');
+            background-repeat: repeat-x;
+            background-position:center 80%;
+            object-fit:contain;
+
+            .fire-1, .fire-2 {
+                position: absolute;
+                bottom: -20px;
+                width: 50%;
+            }
+
+            .fire-1 {
+                left: 0;
+            }
+
+            .fire-2 {
+                right: 0;
+            }
+
+            .content-title {
+                position: absolute;
+                top: 5%;
+                left: 37%;
+                height: 72px;
+            }
+
+            .content-text {
+                position: absolute;
+                top: 20%;
+                left: 37%;
+                height: 40px;
+            }
+
+            .chest-box-comp {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+
+                .bricks-div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+    
+                .brick {
+                    height: 50px;
+                }
+
+            }
+
+            #chst-b-1 {
+                position: absolute;
+                top: 45%;
+                left: 12%;
+
+                #chestImg-1 {
+                    position: absolute;
+                    top: -20%;
+                    left: 18.5%;
+                    height: 150px;
+                    opacity: 0;
+                    // animation: fadeOutChestImg 1s linear normal forwards;
+                }
+            }
+
+
+            #chst-b-2 {
+                position: absolute;
+                top: 53%;
+                left: 32%;
+
+                #chestImg-2 {
+                    position: absolute;
+                    top: -20%;
+                    left: 18.5%;
+                    height: 150px;
+                    opacity: 0;
+                    // animation: fadeOutChestImg 1s linear normal forwards;
+                }
+            }
+
+            #chst-b-3 {
+                position: absolute;
+                top: 45%;
+                right: 32%;
+
+                #chestImg-3 {
+                    position: absolute;
+                    top: -20%;
+                    left: 18.5%;
+                    height: 150px;
+                    opacity: 0;
+                    // animation: fadeOutChestImg 1s linear normal forwards;
+                }
+            }
+
+            #chst-b-4 {
+                position: absolute;
+                top: 49%;
+                right: 12%;
+
+                #chestImg-4 {
+                    position: absolute;
+                    top: -20%;
+                    left: 18.5%;
+                    height: 150px;
+                    opacity: 0;
+                    // animation: fadeOutChestImg 1s linear normal forwards;
+                }
+            }
+
+            .dinosaur {
+                position: absolute;
+                top: 30%;
+                left: 0%;
+                height: 5rem;
+            }
+
+            .sprinkles {
+                height: 3.2rem;
+            }
+
+            #sprinkle-1 {
+                position: absolute;
+                top: 10%;
+                right: 30%;
+            }
+
+            #sprinkle-2 {
+                position: absolute;
+                top: 12%;
+                left: 30%;
+            }
+
+            @keyframes fadeOutChestImg {
+                0%{
+                    transform: translateY(-20%);
+                    opacity: 0.2;
+                }
+                50% {
+                    transform: translateY(-40%);
+                    opacity: 0.5;
+                }
+                100% {
+                    transform: translateY(-60%);
+                    opacity: 1;
+                }
+            }
+
+        }
+
+    }
+
+    .toggle-screen-2 {
+        display: none;
+    }
+
+    .toggle-screen-3 {
+        display: none;
+    }
+}
