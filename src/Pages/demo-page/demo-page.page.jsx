@@ -41,6 +41,8 @@ import chestBoxImg from '../../assets/content/chestbox-img.png';
 import fire1 from '../../assets/content/fire-1.png';
 import fire2 from '../../assets/content/fire-2.png';
 
+//Adding this line for git activity
+
 function DemoPage() {
 
   const scaleUpMachineAnimation = {
