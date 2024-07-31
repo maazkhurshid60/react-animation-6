@@ -5,7 +5,7 @@ import './index.css';
 import PrizeArcade from './Prize-Arcade';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// changing this line git activity
+// adding this line git activity
 root.render(
   <React.StrictMode>
     <PrizeArcade />
